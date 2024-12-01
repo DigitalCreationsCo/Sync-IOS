@@ -16,6 +16,7 @@
 		93204D5F2BFF029B003AF954 /* messageflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93204D5E2BFF029B003AF954 /* messageflowTests.swift */; };
 		93204D692BFF029B003AF954 /* messageflowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93204D682BFF029B003AF954 /* messageflowUITests.swift */; };
 		93204D6B2BFF029B003AF954 /* messageflowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93204D6A2BFF029B003AF954 /* messageflowUITestsLaunchTests.swift */; };
+		93204D792BFF0604003AF954 /* .xcdatamodeld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93204D772BFF0604003AF954 /* .xcdatamodeld.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +37,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		93204D452BFF0299003AF954 /* messageflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messageflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93204D452BFF0299003AF954 /* messageflow2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messageflow2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93204D482BFF0299003AF954 /* messageflowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageflowApp.swift; sourceTree = "<group>"; };
 		93204D4A2BFF0299003AF954 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93204D4C2BFF029B003AF954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93204D4F2BFF029B003AF954 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93204D512BFF029B003AF954 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		93204D542BFF029B003AF954 /* messageflow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = messageflow.xcdatamodel; sourceTree = "<group>"; };
-		93204D5A2BFF029B003AF954 /* messageflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = messageflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93204D5A2BFF029B003AF954 /* messageflow2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = messageflow2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93204D5E2BFF029B003AF954 /* messageflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageflowTests.swift; sourceTree = "<group>"; };
-		93204D642BFF029B003AF954 /* messageflowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = messageflowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93204D642BFF029B003AF954 /* messageflow2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = messageflow2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93204D682BFF029B003AF954 /* messageflowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageflowUITests.swift; sourceTree = "<group>"; };
 		93204D6A2BFF029B003AF954 /* messageflowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageflowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93204D782BFF0604003AF954 /* .xcdatamodeld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = .xcdatamodeld.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +90,9 @@
 		93204D462BFF0299003AF954 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93204D452BFF0299003AF954 /* messageflow.app */,
-				93204D5A2BFF029B003AF954 /* messageflowTests.xctest */,
-				93204D642BFF029B003AF954 /* messageflowUITests.xctest */,
+				93204D452BFF0299003AF954 /* messageflow2.app */,
+				93204D5A2BFF029B003AF954 /* messageflow2Tests.xctest */,
+				93204D642BFF029B003AF954 /* messageflow2UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +102,7 @@
 			children = (
 				93204D482BFF0299003AF954 /* messageflowApp.swift */,
 				93204D4A2BFF0299003AF954 /* ContentView.swift */,
+				93204D772BFF0604003AF954 /* .xcdatamodeld.xcdatamodeld */,
 				93204D4C2BFF029B003AF954 /* Assets.xcassets */,
 				93204D512BFF029B003AF954 /* Persistence.swift */,
 				93204D532BFF029B003AF954 /* messageflow.xcdatamodeld */,
@@ -136,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		93204D442BFF0299003AF954 /* messageflow */ = {
+		93204D442BFF0299003AF954 /* messageflow2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93204D6E2BFF029B003AF954 /* Build configuration list for PBXNativeTarget "messageflow" */;
+			buildConfigurationList = 93204D6E2BFF029B003AF954 /* Build configuration list for PBXNativeTarget "messageflow2" */;
 			buildPhases = (
 				93204D412BFF0299003AF954 /* Sources */,
 				93204D422BFF0299003AF954 /* Frameworks */,
@@ -148,14 +151,14 @@
 			);
 			dependencies = (
 			);
-			name = messageflow;
+			name = messageflow2;
 			productName = messageflow;
-			productReference = 93204D452BFF0299003AF954 /* messageflow.app */;
+			productReference = 93204D452BFF0299003AF954 /* messageflow2.app */;
 			productType = "com.apple.product-type.application";
 		};
-		93204D592BFF029B003AF954 /* messageflowTests */ = {
+		93204D592BFF029B003AF954 /* messageflow2Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93204D712BFF029B003AF954 /* Build configuration list for PBXNativeTarget "messageflowTests" */;
+			buildConfigurationList = 93204D712BFF029B003AF954 /* Build configuration list for PBXNativeTarget "messageflow2Tests" */;
 			buildPhases = (
 				93204D562BFF029B003AF954 /* Sources */,
 				93204D572BFF029B003AF954 /* Frameworks */,
@@ -166,14 +169,14 @@
 			dependencies = (
 				93204D5C2BFF029B003AF954 /* PBXTargetDependency */,
 			);
-			name = messageflowTests;
+			name = messageflow2Tests;
 			productName = messageflowTests;
-			productReference = 93204D5A2BFF029B003AF954 /* messageflowTests.xctest */;
+			productReference = 93204D5A2BFF029B003AF954 /* messageflow2Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		93204D632BFF029B003AF954 /* messageflowUITests */ = {
+		93204D632BFF029B003AF954 /* messageflow2UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93204D742BFF029B003AF954 /* Build configuration list for PBXNativeTarget "messageflowUITests" */;
+			buildConfigurationList = 93204D742BFF029B003AF954 /* Build configuration list for PBXNativeTarget "messageflow2UITests" */;
 			buildPhases = (
 				93204D602BFF029B003AF954 /* Sources */,
 				93204D612BFF029B003AF954 /* Frameworks */,
@@ -184,9 +187,9 @@
 			dependencies = (
 				93204D662BFF029B003AF954 /* PBXTargetDependency */,
 			);
-			name = messageflowUITests;
+			name = messageflow2UITests;
 			productName = messageflowUITests;
-			productReference = 93204D642BFF029B003AF954 /* messageflowUITests.xctest */;
+			productReference = 93204D642BFF029B003AF954 /* messageflow2UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +215,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 93204D402BFF0299003AF954 /* Build configuration list for PBXProject "messageflow" */;
+			buildConfigurationList = 93204D402BFF0299003AF954 /* Build configuration list for PBXProject "messageflow2" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,9 +228,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93204D442BFF0299003AF954 /* messageflow */,
-				93204D592BFF029B003AF954 /* messageflowTests */,
-				93204D632BFF029B003AF954 /* messageflowUITests */,
+				93204D442BFF0299003AF954 /* messageflow2 */,
+				93204D592BFF029B003AF954 /* messageflow2Tests */,
+				93204D632BFF029B003AF954 /* messageflow2UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +268,7 @@
 			files = (
 				93204D522BFF029B003AF954 /* Persistence.swift in Sources */,
 				93204D552BFF029B003AF954 /* messageflow.xcdatamodeld in Sources */,
+				93204D792BFF0604003AF954 /* .xcdatamodeld.xcdatamodeld in Sources */,
 				93204D4B2BFF0299003AF954 /* ContentView.swift in Sources */,
 				93204D492BFF0299003AF954 /* messageflowApp.swift in Sources */,
 			);
@@ -292,12 +296,12 @@
 /* Begin PBXTargetDependency section */
 		93204D5C2BFF029B003AF954 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93204D442BFF0299003AF954 /* messageflow */;
+			target = 93204D442BFF0299003AF954 /* messageflow2 */;
 			targetProxy = 93204D5B2BFF029B003AF954 /* PBXContainerItemProxy */;
 		};
 		93204D662BFF029B003AF954 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93204D442BFF0299003AF954 /* messageflow */;
+			target = 93204D442BFF0299003AF954 /* messageflow2 */;
 			targetProxy = 93204D652BFF029B003AF954 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -496,7 +500,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/messageflow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/messageflow";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/messageflow2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/messageflow2";
 			};
 			name = Debug;
 		};
@@ -516,7 +520,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/messageflow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/messageflow";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/messageflow2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/messageflow2";
 			};
 			name = Release;
 		};
@@ -559,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		93204D402BFF0299003AF954 /* Build configuration list for PBXProject "messageflow" */ = {
+		93204D402BFF0299003AF954 /* Build configuration list for PBXProject "messageflow2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93204D6C2BFF029B003AF954 /* Debug */,
@@ -568,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93204D6E2BFF029B003AF954 /* Build configuration list for PBXNativeTarget "messageflow" */ = {
+		93204D6E2BFF029B003AF954 /* Build configuration list for PBXNativeTarget "messageflow2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93204D6F2BFF029B003AF954 /* Debug */,
@@ -577,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93204D712BFF029B003AF954 /* Build configuration list for PBXNativeTarget "messageflowTests" */ = {
+		93204D712BFF029B003AF954 /* Build configuration list for PBXNativeTarget "messageflow2Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93204D722BFF029B003AF954 /* Debug */,
@@ -586,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93204D742BFF029B003AF954 /* Build configuration list for PBXNativeTarget "messageflowUITests" */ = {
+		93204D742BFF029B003AF954 /* Build configuration list for PBXNativeTarget "messageflow2UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93204D752BFF029B003AF954 /* Debug */,
@@ -605,6 +609,16 @@
 			);
 			currentVersion = 93204D542BFF029B003AF954 /* messageflow.xcdatamodel */;
 			path = messageflow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		93204D772BFF0604003AF954 /* .xcdatamodeld.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93204D782BFF0604003AF954 /* .xcdatamodeld.xcdatamodel */,
+			);
+			currentVersion = 93204D782BFF0604003AF954 /* .xcdatamodeld.xcdatamodel */;
+			path = .xcdatamodeld.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

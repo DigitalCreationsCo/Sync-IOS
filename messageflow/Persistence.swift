@@ -6,6 +6,8 @@
 //
 
 import CoreData
+import UserNotifications
+import UIKit
 
 struct PersistenceController {
     static let shared = PersistenceController()
@@ -52,5 +54,57 @@ struct PersistenceController {
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
+    }
+    
+    func saveContext() {
+        let context = container.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
+    
+    func archiveMessage(_ message: String, from sender: String) {
+        let context = container.viewContext
+        let archivedMessage = ArchivedMessage(context: context)
+        archivedMessage.content = message
+        archivedMessage.sender = sender
+        archivedMessage.dateReceived = Date()
+
+        saveContext()
+    }
+    
+    func forwardMessage(_ message: String) {
+        let activityViewController = UIActivityViewController(activityItems: [message], applicationActivities: nil)
+        if let topController = UIApplication.shared.keyWindow?.rootViewController {
+            topController.present(activityViewController, animated: true, completion: nil)
+        }
+    }
+    
+    func muteNotifications(for sender: String) {
+        // Logic to mute notifications from the specific sender
+        let center = UNUserNotificationCenter.current()
+        center.getNotificationSettings { settings in
+            guard settings.authorizationStatus == .authorized else { return }
+
+            let muteAction = UNNotificationAction(identifier: "MUTE_ACTION", title: "Mute", options: [])
+            let category = UNNotificationCategory(identifier: "MESSAGE_CATEGORY", actions: [muteAction], intentIdentifiers: [], options: [])
+            center.setNotificationCategories([category])
+        }
+    }
+    
+    func deferNotification(for message: String, until date: Date) {
+        let content = UNMutableNotificationContent()
+        content.body = message
+        content.categoryIdentifier = "MESSAGE_CATEGORY"
+
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: date.timeIntervalSinceNow, repeats: false)
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
 }
